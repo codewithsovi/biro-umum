@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Theme Documentation</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700,800,600,300" rel="stylesheet" type="text/css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/syntaxhighlighter/scripts/shCore.js"></script>
+  <script src="js/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+  <script src="js/syntaxhighlighter/scripts/shBrushCss.js"></script>
+  <script src="js/syntaxhighlighter/scripts/shBrushPlain.js"></script>
+  <script src="js/syntaxhighlighter/scripts/shBrushXml.js"></script>
+  <script type="text/javascript">
+    SyntaxHighlighter.all();
+  </script>
+  <link rel="stylesheet" href="js/syntaxhighlighter/styles/shCoreDefault.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="text-center">
+    <div class="links">
+      <a target="_blank" href="http://themes.iamabdus.com/royal/">View Template Demo</a>
+    </div>
+  </header>
+  <div class="wrapper">
+    <section>
+      <div class="container">
+        <ul class="docs-nav">
+          <li><strong>Introduction</strong></li>
+          <li><a href="#getting-started" class="cc-active active">Getting Started</a></li>
+          <li><a href="#html-structure" class="cc-active">HTML Structure</a></li>
+          <li><a href="#layout-style" class="cc-active">Layout</a></li>
+          <li><a href="#color-schemes" class="cc-active">Color Schemes</a></li>
+          <li><a href="#chaning-fonts" class="cc-active">Fonts</a></li>
+          <li><a href="#header-topbar" class="cc-active">Header</a></li>
+        </ul>
+        <div class="docs-content">
+          <div class="docs-content-inner" id="docs-start-less">
+            <section id="getting-started">
+              <h1>Introduction</h1>
+              <p>Thank you for purchasing <strong>Royal College</strong> template!</p>
+              <p> This documentation will give you an understanding of how <strong>Royal College</strong> is structured and guide you in performing common functions. If you require further assistance not covered in this documentation, please contact me at <a href="mailto:hello@iamabdus.com">hello@iamabdus.com</a> or submit your ticket at: <a target="_blank" href="https://iamabdus.ticksy.com">iamabdus.ticksy.com</a></p>
+              <p>Thank you so much!</p>
+              <p>&nbsp;</p>
+              <h1 id="Installation">Getting Started</h1>
+              <h4>What's Included</h4>
+              <p><strong>1. HTML</strong> - Once you have download the package you will see the following folder structure in "<strong>HTML</strong>" folder. This folder contains static HTML CSS files</p>
+
+              <div id="default-tree">
+                <ul>
+                  <li><strong>css</strong> - Main css files</li>
+                  <li><strong>img </strong>- Image files</li>
+                  <li><strong>js</strong> - Custom js files</li>
+                  <li><strong>plugins</strong> - All used plugins</li>
+                </ul>
+              </div>
+              <p>&nbsp;</p>
+              <p><strong>2. SCSS</strong> - You will see the following folder structure in "<strong>SCSS</strong>" folder. This folder contains SCSS files if you want to use Sass as a css preprocessor.</p>
+
+              <div id="default-tree">
+                <ul>
+                  <li><strong>scss</strong> - All Scss files</li>
+                  <li><strong>css</strong> - Output css from Scss files</li>
+                  <li><strong>img</strong> - Image files</li>
+                  <li><strong>js</strong> - Custom js files</li>
+                  <li><strong>plugins</strong> - All used plugins</li>
+                </ul>
+              </div>
+            </section>
+            <section id="html-structure">
+              <h1>HTML Structure</h1>
+              <p><strong>Angel</strong> template is based on Bootstrap Framework (<a href="http://getbootstrap.com/">http://getbootstrap.com/</a>) Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+              <p>Below is a sample coding structure:</p>
+              <pre class="brush: html;">
+                &lt;!DOCTYPE html&gt;
+
+                &lt;html lang="en-US"&gt;
+
+                &lt;head&gt;
+
+                <!-- Page meta, page css, page title etc... -->
+
+                &lt;/head&gt;
+
+                &lt;body class="body-wrapper"&gt;
+
+                <!-- MAIN WRAPPER -->
+                &lt;div class="main-wrapper"&gt;
+
+                  <!-- HEADER -->
+                  &lt;header class="header"&gt;
+
+                    ...
+
+                  &lt;/header&gt;
+
+                  <!-- SECTION -->
+                  &lt;div class= "main-content"&gt;
+                    &lt;div class="container"&gt;
+
+                      ...
+
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  <!-- FOOTER -->
+                  &lt;footer&gt;
+
+                      ...
+
+                  &lt;/footer&gt;
+
+                &lt;/div&gt;
+
+                &lt;/body&gt;
+
+                &lt;/html&gt;
+
+              </pre>
+            </section>
+            <section id="layout-style">
+              <h1>Layout Style</h1>
+              <p>The template supports two different layout modes, Boxed & Wide Layout. The wide one is the default option, if you want to use the Boxed version, add the following class in the <code>&lt;body&gt;</code> and layout style will be changed to boxed version.</p>
+              <pre class="brush: html;">&lt;body class="bodyColor wrapper"&gt;</pre>
+              <h4>Background Pattern:For Boxed version</h4>
+              <p>if you want to use background pattern in the Boxed version, add one of the following class"pattern-default, pattern1, pattern2, pattern3" in the <code>&lt;body&gt;</code> like this:</p>
+              <pre class="brush: html;">&lt;body class="bodyColor wrapper pattern1"&gt;</pre>
+            </section>
+
+            <section id="color-schemes">
+              <h1>Color Schemes</h1>
+              <p>This part of the documentation will explain how to change the current Color Scheme of your site, You simply need to include an existing color scheme or change the HEX Color Code in the <code>css/colors/default.css</code> and include inside <code>&lt;head&gt;</code>
+                  <br>
+                  <br>
+              </p>
+              <h4>Default color example</h4>
+              <pre class="brush: html;">
+
+                &lt;head&gt;
+
+                <!-- Template color -->
+                &lt;link rel="stylesheet" href="css/colors/default.css" id="option_color"&gt;
+
+                &lt;/head&gt;
+
+              </pre>
+              <br>
+              <br>
+              <h4>How to change default color:</h4>
+              <p>To change default color, go to this folder<code>css/colors/default.css</code> and open <code>default.css</code>.Change the HEX Color Code whatever you want like: <code>color: #9b59b6;</code></p>
+            </section>
+            <section id="chaning-fonts">
+              <h1>Changing Fonts</h1>
+              <p>If you wish to add/change the site fonts, please take a look in the <code>head</code> part of the website and replace this tag:</p>
+              <pre class="brush: html">
+
+                <!-- GOOGLE FONT -->
+                &lt;link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'&gt;
+
+              </pre>
+            </section>
+            <section id="header-topbar">
+              <h1>Header Styles</h1>
+              <br>
+              <h4>Fixed Header</h4>
+              <p>Default header is fixed</p>
+              <h4>Static Header</h4>
+              <p>For static header you need to add following class in the <code>&lt;body&gt;</code></p>
+              <pre class="brush: html;">&lt;body class="static"&gt;</pre>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

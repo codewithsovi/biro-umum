@@ -40,6 +40,19 @@ services:
     networks:
       - biro-network
 
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: biro-umum-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@mail.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+    networks:
+      - biro-network
 volumes:
   dbdata:
 
